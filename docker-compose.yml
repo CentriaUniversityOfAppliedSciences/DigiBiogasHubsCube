@@ -1,0 +1,26 @@
+services:
+  cubestore:
+    restart: always
+    image: cubejs/cubestore:non-avx
+    environment:
+      - CUBESTORE_REMOTE_DIR=/cube/data
+    volumes:
+      - .cubestore:/cube/data
+ 
+  cube:
+    restart: always
+    image: cubejs/cube:latest
+    ports:
+      - 4000:4000
+    env_file:
+      - .env
+    depends_on:
+      - cubestore
+    links:
+      - cubestore
+    volumes:
+      - ./model:/cube/conf/model
+      - .:/cube/conf
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    
