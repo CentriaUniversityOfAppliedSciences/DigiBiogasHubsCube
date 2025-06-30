@@ -2,7 +2,7 @@ DigiBiogasHubs cubejs service\
 
 .env file\
 ```
-CUBEJS_DB_HOST=host.docker.internal #if postgresql in docker else localhost
+CUBEJS_DB_HOST=host.docker.internal
 CUBEJS_DB_PORT=5432
 CUBEJS_DB_NAME=digibiogashubsdbname
 CUBEJS_DB_USER=usernamefordigibiogashubsdb
