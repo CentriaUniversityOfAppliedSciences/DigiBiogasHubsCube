@@ -1,6 +1,6 @@
-DigiBiogasHubs cubejs service\
+DigiBiogasHubs cubejs service
 
-.env file\
+.env file
 ```
 CUBEJS_DB_HOST=host.docker.internal
 CUBEJS_DB_PORT=5432
@@ -21,5 +21,5 @@ CUBEJS_REFRESH_WORKER=true
 
 change postgresql conf to allow incoming from docker ip
 
-start with "docker compose up"\
-stop with "docker compose stop"\
+start with "docker compose up"
+stop with "docker compose stop"
