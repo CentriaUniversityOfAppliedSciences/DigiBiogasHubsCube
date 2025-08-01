@@ -2,8 +2,12 @@ services:
   cubestore:
     restart: always
     image: cubejs/cubestore:non-avx
+    env_file:
+      - .env
     environment:
       - CUBESTORE_REMOTE_DIR=/cube/data
+      - CUBESTORE_MYSQL_PORT=0
+      - CUBESTORE_MYSQL_BIND_ADDR=127.0.0.1:3307
     volumes:
       - .cubestore:/cube/data
  

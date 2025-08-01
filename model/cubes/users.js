@@ -26,12 +26,6 @@ cube(`users`, {
       sql: `name`,
       type: `string`
     },
-    
-    password: {
-      sql: `password`,
-      type: `string`
-    },
-    
     authmethod: {
       sql: `${CUBE}."authMethod"`,
       type: `string`
