@@ -1,3 +1,8 @@
+# DigiBioGasHubCube
+
+![Project is co-funded by the European Union](./assets/funder-logo-en.png)
+[Project Website](https://sites.uwasa.fi/digibiogashubs/)
+
 DigiBiogasHubs cubejs service
 
 .env file
