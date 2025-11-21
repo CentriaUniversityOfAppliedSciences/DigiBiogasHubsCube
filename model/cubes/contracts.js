@@ -71,6 +71,10 @@ cube(`contracts`, {
   measures: {
     count: {
       type: `count`
+    },
+    total:{
+      type: `sum`,
+      sql: `(amount*price)`
     }
   },
   

@@ -3,7 +3,7 @@ module.exports = {
         if (securityContext.id){
             var dimen = query.dimensions || [];
             if (securityContext.userlevel === 99){
-
+                
             }
             else{
                 //if (dimen.includes('companies.name')) {
